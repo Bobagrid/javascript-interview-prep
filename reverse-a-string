@@ -1,0 +1,13 @@
+//My two possible solutions:
+function reverseString(s) {
+    let newWord = "";
+    for(let i = s.length - 1; i >= 0; i--) {
+        newWord += s[i];
+    }
+    return newWord;
+}
+
+//Second made AI assisted
+function reverseString(s) {
+  return s.split("").reverse().join("");
+}
