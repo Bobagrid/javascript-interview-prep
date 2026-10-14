@@ -1,0 +1,25 @@
+//First option:
+function countVowels(s) {
+    let count = 0;
+    const vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
+    for (const letter of s) {
+        if (vowels.includes(letter)) {
+            count++;
+        }
+    }
+    return count;
+}
+
+//Second option:
+function countVowels(s) {
+    let count = 0;
+    const vowels = ["a", "e", "i", "o", "u"];
+
+    for (const letter of s.toLowerCase()) {
+        if (vowels.includes(letter)) {
+            count++;
+        }
+    }
+
+    return count;
+}
