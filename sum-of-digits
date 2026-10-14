@@ -1,0 +1,8 @@
+function sumOfDigits(n) {
+    let numberToSring = n.toString();
+    let sum = 0;
+    for(const digit of numberToSring) {
+        sum += Number(digit);
+    }
+    return sum;
+}
