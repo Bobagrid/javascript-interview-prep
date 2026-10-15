@@ -1,0 +1,11 @@
+function fib(n) {
+    let nroAux = 0;
+    let nroAux2 = 1;
+    let result = n;
+    for (let i = 1; i < n; i++) {
+        result = nroAux + nroAux2;
+        nroAux = nroAux2;
+        nroAux2 = result;
+    }
+    return result;
+}
