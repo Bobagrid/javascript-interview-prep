@@ -1,0 +1,8 @@
+function isPrime(n) {
+    for (let i = Math.floor(n / 2); i >= 2; i--) { //To reduce the amount of loops I divide n by 2 and round it.
+        if (n % i === 0) {
+            return false; //If it finds a divisor the number is not prime.
+        }
+    }
+    return n !== 1; //If it didn't find a divisor it returns true as long as the number is not 1.
+}
