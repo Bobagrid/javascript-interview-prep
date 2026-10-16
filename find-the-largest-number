@@ -1,0 +1,15 @@
+//In this excercise is not allowed to use Math.max(), thats why I chose this solution
+
+function findMax(nums) {
+    let actualMax = nums[0];
+
+    for (let i = 1; i < nums.length; i++) {
+        if (nums[i] > actualMax) {
+            actualMax = nums[i];
+        }
+    }
+    return actualMax;
+}
+
+//The function returns an integer.
+//1 ≤ nums.length ≤ 5000
