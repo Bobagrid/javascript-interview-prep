@@ -1,0 +1,10 @@
+//The function returns the amount of even numbers in the array "nums"
+function countEvens(nums) { //nums can´t be empty.
+    let counter = 0;
+    for (const num of nums) {
+        if (num % 2 === 0) {
+            counter++;
+        }
+    }
+    return counter;
+}
