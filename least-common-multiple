@@ -1,0 +1,7 @@
+function lcm(a, b) { // a and b are positive integers
+    let actualMultiple = a;
+    while (actualMultiple % b !== 0) {
+        actualMultiple += a;
+    }
+    return actualMultiple; //it returns an integer
+}
