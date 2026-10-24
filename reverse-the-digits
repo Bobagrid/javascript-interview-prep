@@ -1,0 +1,5 @@
+//The function returns the digits of n in inverse order. For example, if n = 123, returns 321. It also removes zeros at the start if the number is != 0
+function reverseDigits(n) { //n is an integer >= 0
+    const reversed = String(n).split("").reverse().join("");
+    return Number(reversed); //returns an integer
+}
