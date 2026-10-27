@@ -1,0 +1,4 @@
+//function returns the amount of digits of n
+function countDigits(n) { // n is an integer >= 0
+    return String(n).length; //returns an integer
+}
