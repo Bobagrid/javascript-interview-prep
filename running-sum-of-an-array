@@ -1,0 +1,9 @@
+//The function returns an integer[] with the same length of nums with each number being the sum of all the previous numbers + the current one;
+function runningSum(nums) { //nums is integer[] with length >= 1;
+                           
+    const newArray = [nums[0]];
+    for(let i = 1; i < nums.length; i++) {
+        newArray[i] = newArray[i - 1] + nums[i];
+    }
+    return newArray;
+}
