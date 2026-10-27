@@ -1,0 +1,17 @@
+//The function returns whether n is an Armstrong number.
+This happens when the number is equal to the sum of all its individual digits (each one raised to the power of the amount of digits of the number)
+
+function isArmstrong(n) { //n is a positive integer.
+    const digits = String(n);
+    const power = digits.length;
+    let sum = 0;
+
+    for (const digit of digits) {
+        sum += Math.pow(Number(digit), power);
+
+        if (sum > n) {
+            return false;
+        }
+    }
+    return sum === n; //returns a boolean
+}
