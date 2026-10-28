@@ -1,0 +1,15 @@
+//Function receives a binary string (s) and returns it as decimal number
+function toDecimal(s) {
+    let decimalNumber = 0;
+    let base = 1;
+    for(let i = s.length - 1; i >= 0; i--) {
+        decimalNumber += Number(s[i]) * base;
+        base *= 2;
+    }
+    return decimalNumber; //returns an Integer
+}
+
+//Alternate solution since there is an existing function that does the same:
+function toDecimal(s) {
+    return parseInt(s, 2); //Parse int turns a string into Integer, s is the text used as parameter, 2 is used to tell the function that the string is a decimal code
+}
