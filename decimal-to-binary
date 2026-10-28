@@ -1,0 +1,16 @@
+//Function returns the binary version of the decimal number used as parameter
+function toBinary(n) { //n is Integer >= 0
+    let auxNumber = n;
+    let binaryNumber = "";
+    while (auxNumber > 1) {
+        binaryNumber += auxNumber % 2;
+        auxNumber = Math.floor(auxNumber / 2);
+    }
+    binaryNumber += auxNumber % 2;
+    return binaryNumber.split("").reverse().join(""); //function returns a binary String
+}
+
+//This is an alternate solution since there is alreay a function that does the same:
+function toBinary(n) {
+    return n.toString(2); //The 2 in the parameter means that it returns the string as binary.
+}
