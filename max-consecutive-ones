@@ -1,0 +1,17 @@
+//The function receives an array of numbers that only includes 1s and 0s.
+//A streak is a sequence of 1s next to each other.
+//The function returns the longest streak. If there are no 1s in nums, function returns 0.
+
+function findMaxConsecutiveOnes(nums) { //nums is integer[]
+    let maxStreak = 0;
+    let actualStreak = 0;
+    for (const digit of nums) {
+        if (digit === 1) {
+            actualStreak++;
+            maxStreak = Math.max(maxStreak, actualStreak);
+        } else {
+            actualStreak = 0;
+        }
+    }
+    return maxStreak //returns integer
+}
