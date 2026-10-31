@@ -1,0 +1,3 @@
+function toLowerCase(s) { // s is string
+    return s.toLowerCase(); //returns string
+}
