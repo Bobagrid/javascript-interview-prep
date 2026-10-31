@@ -1,3 +1,3 @@
-function toLowerCase(s) { // s is string
+function toLowerCase(s) { // s is string with length >= 1
     return s.toLowerCase(); //returns string
 }
