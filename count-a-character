@@ -1,0 +1,4 @@
+//function returns the amount of times that character "c" appears in the string "s"
+function countChar(s, c) {
+    return s.split(c).length - 1; //returns an integer
+}
