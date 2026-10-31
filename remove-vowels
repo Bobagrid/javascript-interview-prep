@@ -1,0 +1,12 @@
+//function returns the string s with its vowels removed
+function removeVowels(s) {  
+    let newString = "";
+    const vowels = ["a", "e", "i", "o", "u"];
+
+    for (const letter of s) {
+        if (!vowels.includes(letter.toLowerCase())) {
+            newString += letter;
+        }
+    }
+    return newString;
+}
