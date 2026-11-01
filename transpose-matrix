@@ -1,0 +1,11 @@
+// Receives a matrix and returns its transpose
+function transpose(matrix) {
+    const newMatrix = [];
+    for (let i = 0; i < matrix[0].length; i++) {
+        newMatrix.push([]);
+        for (let j = 0; j < matrix.length; j++) {
+            newMatrix[i].push(matrix[j][i]);
+        }
+    }
+    return newMatrix
+}
