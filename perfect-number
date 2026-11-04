@@ -1,0 +1,16 @@
+//returns if n is a Perfect Number
+function isPerfect(n) { //n has to be integer and >= 1
+  if(n <= 1) {
+  return false;
+  }
+    let sum = 1;
+    for (let i = 2; i <= Math.round(n / 2); i++) {
+        if (n % i === 0) {
+            sum += i
+        }
+        if (sum > n) {
+            return false
+        }
+    }
+    return sum === n;
+}
