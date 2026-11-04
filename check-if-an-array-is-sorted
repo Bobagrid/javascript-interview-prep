@@ -1,0 +1,11 @@
+//returns if the integer array nums is sorted(in ascending order)
+function isSorted(nums) { //nums.length >= 1
+    let sortedArr = [...nums].sort(); //I create a copy because sort modifies the original array.
+  
+    for (let i = 0; i < nums.length; i++) {
+        if (sortedArr[i] !== nums[i]) {
+            return false;
+        }
+    }
+    return true;
+}
