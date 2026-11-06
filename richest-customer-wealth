@@ -1,0 +1,18 @@
+/*A bank uses a matrix of accounts with m rows, one for each client, and n columns, one for each bank: accounts[i][j] is the money that the client i has in the bank j. 
+The total wealth of a client is the total of their rown
+Function returns the maximum total wealth of a client*/
+
+function maximumWealth(accounts) { //accounts is integer[[]];
+    let auxSum = 0;
+    let maxWealth = 0;
+    for(let i = 0; i < accounts.length; i++) {
+        for(let j = 0; j < accounts[i].length; j++) {
+            auxSum += accounts[i][j];
+        }
+        if(auxSum > maxWealth) {
+            maxWealth = auxSum;
+        }
+        auxSum = 0;
+    }
+    return maxWealth; //returns integer
+}
