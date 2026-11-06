@@ -1,0 +1,13 @@
+//function returns the amount of steps to reduce n to zero. In every step, if number is odd you will substract 1 to it. If it is even you will divide it by 2.
+function numberOfSteps(n) { // n >= 0
+    let counter = 0;
+    while (n > 0) {
+        if (n % 2 === 1) {
+            n -= 1;
+        } else {
+            n /= 2;
+        }
+        counter++;
+    }
+    return counter; //returns integer
+}
