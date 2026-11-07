@@ -4,9 +4,8 @@
 
 function numJewelsInStones(jewels, stones) { //jewels and stones are strings with length >= 1
     let amount = 0;
-    let stonesArray = stones.split("");
-    for(let i = 0; i < stonesArray.length; i++) {
-        if(jewels.includes(stonesArray[i])) {
+    for(let i = 0; i < stones.length; i++) {
+        if(jewels.includes(stones[i])) {
             amount++;
         }
     }
