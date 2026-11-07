@@ -1,0 +1,14 @@
+//jewels is a string in which every character represents a kind of jewel. It doesn't have repeated characters.
+//Each character of stones represents a stone you have in your collection.
+//Function returns how many stones of your collections are jewels. Function is key sensitive
+
+function numJewelsInStones(jewels, stones) { //jewels and stones are strings with length >= 1
+    let amount = 0;
+    let stonesArray = stones.split("");
+    for(let i = 0; i < stonesArray.length; i++) {
+        if(jewels.includes(stonesArray[i])) {
+            amount++;
+        }
+    }
+    return amount; //returns integer
+}
