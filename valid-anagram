@@ -1,0 +1,19 @@
+//Function returns if s is an anagram of t and vice versa
+function isAnagram(s, t) { //s and t are words without blank spaces before, after or in the middle of the word.
+    
+    let auxString = s.trim();
+    let auxSecondWord = t.trim();
+
+    if(auxString.length !== auxSecondWord.length) {
+        return false;
+    }
+
+    for(const char of auxString) {
+        if(auxSecondWord.includes(char)) {
+            auxSecondWord = auxSecondWord.replace(char, "");
+        } else {
+            return false;
+        }
+    }
+    return true; 
+}
