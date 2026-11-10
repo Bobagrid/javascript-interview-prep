@@ -1,0 +1,18 @@
+/*In the FizzBuzz counting game, players count up from 1 and replace certain numbers with words.
+Given an integer n representing a turn number, return what a player says on that turn:
+"FizzBuzz" if n is divisible by both 3 and 5.
+"Fizz" if n is divisible by 3 only.
+"Buzz" if n is divisible by 5 only.
+Otherwise, return n as a string, such as "7".*/
+
+function fizzBuzz(n) { //n is integer  >= 1
+
+    let result = "";
+    if (n % 3 === 0) result += "Fizz";
+
+    if (n % 5 === 0) result += "Buzz";
+
+    if(result.length === 0) return String(n);
+    
+    return result; //returns string
+}
