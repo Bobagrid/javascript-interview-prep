@@ -1,0 +1,4 @@
+//Function returns if nums has two iterations of the same item.
+function containsDuplicate(nums) { //nums is an array
+    return nums.length !== new Set(nums).size; //returns integer
+}
