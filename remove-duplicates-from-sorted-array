@@ -1,0 +1,4 @@
+//Given a sorted Number[], function returns an array of numbers without duplicates
+function removeDuplicates(nums) {
+    return Array.from(new Set(nums));
+}
