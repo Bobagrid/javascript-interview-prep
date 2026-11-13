@@ -1,0 +1,9 @@
+//nums is an array of numbers that goes from 0 to nums.length but it has one number missing.
+//Function returns the number who is not included in the array
+function missingNumber(nums) {
+    for (let i = 0; i <= nums.length; i++) {
+        if (!nums.includes(i)) {
+            return i;
+        }
+    }
+}
