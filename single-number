@@ -1,0 +1,13 @@
+//Function recieves an array with length >= 1 and items with 2 copies except for one. The function returns the item with only one copy.
+
+function singleNumber(nums) {
+    let auxList = [...nums];
+    let auxNumber = 0;
+    let foundNumbers = [];
+
+    for (let i = 0; i < nums.length; i++) {
+        auxNumber = auxList.shift();
+        if (!foundNumbers.includes(auxNumber) && !auxList.includes(auxNumber)) return auxNumber
+        foundNumbers.push(auxNumber);
+    }
+}
