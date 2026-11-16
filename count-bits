@@ -1,0 +1,17 @@
+//Function returns an array with length n + 1 in which each i position is the amount of "1"s that the number i has in binary. Going from 0 to n
+function countBits(n) {
+    let binaryArray = [0];
+    let auxBinary;
+    let auxCounter = 0;
+    for (let i = 1; i <= n; i++) {
+        auxBinary = i.toString(2);
+        for(const number of auxBinary) {
+            if(number === "1") {
+                auxCounter++;
+            }
+        }
+        binaryArray.push(auxCounter);
+        auxCounter = 0;
+    }
+    return binaryArray;
+}
