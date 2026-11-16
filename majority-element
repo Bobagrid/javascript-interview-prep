@@ -1,0 +1,16 @@
+//nums has an item which appears more than nums.length / 2 times
+//Function returns this exact item.
+function majorityElement(nums) {
+    let actualMax = 0;
+    for(const num of new Set(nums)) {
+        for(const number of nums) {
+            if(num === number) {
+                actualMax++;
+            }
+        }
+        if(actualMax > nums.length / 2) {
+            return num;
+        }
+        actualMax = 0;
+    }
+}
